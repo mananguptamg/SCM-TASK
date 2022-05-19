@@ -101,3 +101,38 @@ void arr::deleteatpos(int b[],int &n,int size)
         cout<<"how many elements you want to enter in an array?";
         int n;
        cin>>n;
+for(int i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    cout<<"enter your choice "<<endl;
+    cout<<"1.Insertion at specified position"<<endl;
+    cout<<"2.Delete an element whose position is given"<<endl;
+    cout<<"3.Delete an element whose value is given"<<endl;
+    cout<<"4.find location of given element"<<endl;
+    cout<<"5.Display elements of a given array"<<endl;
+    int choice;
+    cin>>choice;
+    while(choice!=-1)
+   {
+       switch(choice)
+{
+         case 1:
+             ll.particular(a,n,size);
+         break;
+        case 2:
+            ll.deleteatpos(a,n,size);
+        break;
+        case 3:
+            ll.deleteavalue(a,n,size);
+        break;
+        case 4:
+          ll.search(a,n,size);
+        break;
+        case 5:
+          ll.display(a,n,size);
+        break;
+   }
+    cin>>choice;
+  }
+}
